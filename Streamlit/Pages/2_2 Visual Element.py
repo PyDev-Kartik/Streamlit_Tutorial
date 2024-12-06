@@ -23,7 +23,7 @@ st.write("For me it's in :")
 st.write(f""" :blue-background["{path}"]""")
 st.write("""•   But python does't supports this addressing. So we would have to solve it. By introducing double-backslash mechanism for error control""")
 st.write("We can modify our path as :")
-st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python programming\\AI Env\\static\\img_path.png")
+st.image("static/img_path.png")
 
 st.code("""
 # Code to display image of a cat : 
@@ -33,12 +33,9 @@ st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python program
         caption="Cat in office",width=200)
 """) 
 
-st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python programming\\AI Env\\static\\code.png",width=5000)
+st.image("static/code.png",width=5000)
 
 # Code to display image of a cat :
-st.image("""C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python programming\\AI Env\\static\\cat.jpg""",
-         caption="Cat in office",width=200)
-
 st.image("static/cat.jpg",caption="Cat in office",width=200)
 
 
