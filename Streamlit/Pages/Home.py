@@ -1,7 +1,8 @@
 import streamlit as st
 
 st.sidebar.title("Directory")
-st.sidebar.page_link("Streamlit/Home.py", label="Home")
+
+st.sidebar.page_link("Streamlit/Pages/Home.py", label="Home")
 st.sidebar.page_link("Streamlit/Pages/0_0 Initialization.py", label="0 Initialization")
 st.sidebar.page_link("Streamlit/Pages/1_1 Text Element.py", label="1 Text Element")
 st.sidebar.page_link("Streamlit/Pages/2_2 Visual Element.py", label="2 Visual Element")
