@@ -258,3 +258,6 @@ st.code("""
                 st.write(f"{key}: {value}")
 """)
 st.divider()
+st.subheader("Help :")
+st.page_link("Help.py",label = "Click Here")
+st.divider()
