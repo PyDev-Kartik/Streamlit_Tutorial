@@ -79,3 +79,6 @@ map_data = pd.DataFrame(
     columns=['lat','lon'])
 st.map(map_data,size=50,height=370)
 st.divider()
+st.subheader("Help :")
+st.page_link("Help.py",label = "Click Here")
+st.divider()
