@@ -23,8 +23,7 @@ help = st.Page("Streamlit/Pages/Help", title="Help")
 
 # navigation
 pages = {
-    "": [initialization = st.Page("Streamlit/Pages/0_0 Initialization", title="0 Initialization")
-textElement,visualElement,dataElement,chartElement,formElement,advanceFormElement,layout,help],
+    "": [home,initialization,textElement,visualElement,dataElement,chartElement,formElement,advanceFormElement,layout,help],
 }
 
 nav = st.navigation(pages)
