@@ -86,3 +86,6 @@ st.code("""if st.button("Increment Counter updated"): # Incrementation of code
 
 st.divider()
 
+st.subheader("Help :")
+st.page_link("Help.py",label = "Click Here")
+st.divider()
