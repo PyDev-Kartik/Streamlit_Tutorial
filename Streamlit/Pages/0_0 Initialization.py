@@ -23,9 +23,9 @@ st.write("##### 4. In VScode install certain Extensions : ")
 
 col1,col2 = st.columns(2)
 with col1:
-        st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python programming\\AI Env\\static\\vs_ext1.png",caption="Step1: Select Extension")
+        st.image("Streamlit/static/vs_ext1.png",caption="Step1: Select Extension")
 with col2:
-        st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python programming\\AI Env\\static\\vs_ext2.png",caption="Step2: Install these Extensions")
+        st.image("Streamlit/static/vs_ext2.png",caption="Step2: Install these Extensions")
 st.divider()
 
 
