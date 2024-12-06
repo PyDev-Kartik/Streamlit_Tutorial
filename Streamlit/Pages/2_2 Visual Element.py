@@ -23,7 +23,7 @@ st.write("For me it's in :")
 st.write(f""" :blue-background["{path}"]""")
 st.write("""•   But python does't supports this addressing. So we would have to solve it. By introducing double-backslash mechanism for error control""")
 st.write("We can modify our path as :")
-st.image("static/img_path.png")
+st.image("Streamlit/static/img_path.png")
 
 st.code("""
 # Code to display image of a cat : 
