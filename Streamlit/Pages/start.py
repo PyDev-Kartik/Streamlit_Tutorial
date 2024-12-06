@@ -8,13 +8,15 @@ dataElement = st.Page("3_3 Data Element.py", title="3 Data Element")
 chartElement = st.Page("4_4 Chart Element.py", title="4 Chart Element")
 formElement = st.Page("5_5 Form Element.py", title="5 Form Element")
 advanceFormElement = st.Page("6_6 Advance Form Element.py", title="6 Advance Form Element")
-layout = st.Page("7_7 Layouts.py", title="7 Layout")
+layouts = st.Page("7_7 Layouts.py", title="7 Layout")
+sample_web = st.Page("8_8 Sample Website.py", title="8 Sample Website")
+deploy = st.Page("9_9 Deploy.py", title="9 Deploy")
 help = st.Page("Help.py", title="Help")
 
 
 # navigation
 pages = {
-    "": [home,initialization,textElement,visualElement,dataElement,chartElement,formElement,advanceFormElement,layout,help],
+    "": [home,initialization,textElement,visualElement,dataElement,chartElement,formElement,advanceFormElement,layouts,sample_web,deploy,help],
 }
 
 nav = st.navigation(pages)
