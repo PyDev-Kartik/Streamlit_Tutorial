@@ -9,7 +9,7 @@ st.markdown("<h3 style='text-align: right;'> - By KARTIK HAJELA </n3>", unsafe_a
 
 
 # pages
-home = st.Page("Streamlit/Pages/Home.py", title="Home")
+home = st.Page("Home.py", title="Home")
 initialization = st.Page("Streamlit/Pages/0_0 Initialization", title="0 Initialization")
 textElement = st.Page("Streamlit/Pages/1_1 Text Element", title="1 Text Element")
 visualElement = st.Page("Streamlit/Pages/2_2 Visual Element", title="2 Visual Element")
