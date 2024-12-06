@@ -9,7 +9,6 @@ st.markdown("<h3 style='text-align: right;'> - By KARTIK HAJELA </n3>", unsafe_a
 
 
 # pages
-home = st.Page("Home.py", title="Home")
 initialization = st.Page("0_0 Initialization.py", title="0 Initialization")
 textElement = st.Page("1_1 Text Element.py", title="1 Text Element")
 visualElement = st.Page("2_2 Visual Element.py", title="2 Visual Element")
@@ -23,7 +22,7 @@ help = st.Page("Help.py", title="Help")
 
 # navigation
 pages = {
-    "": [home,initialization,textElement,visualElement,dataElement,chartElement,formElement,advanceFormElement,layout,help],
+    "": [initialization,textElement,visualElement,dataElement,chartElement,formElement,advanceFormElement,layout,help],
 }
 
 nav = st.navigation(pages)
