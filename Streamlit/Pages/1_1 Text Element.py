@@ -126,3 +126,6 @@ st.write("###### Hi ")
 
 
 st.divider()
+st.subheader("Help :")
+st.page_link("Help.py",label = "Click Here")
+st.divider()
