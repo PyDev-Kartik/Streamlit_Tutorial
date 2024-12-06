@@ -13,7 +13,7 @@ st.write("##### 1. You can download python from this link :")
 st.link_button("Python Download link","https://www.python.org/downloads/")
 st.write("##### 2. Make sure you choose the following settings :")
 st.caption("Then hit install and wait.")
-st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python programming\\AI Env\\static\\python.png")
+st.image("Streamlit/static/python.png")
 
 st.write("##### 3. VS Code Installation : ")
 st.write("You can download it from this link :")
@@ -40,10 +40,10 @@ with mi_col2:
 with mi_col3:
         st.link_button("All OS link","https://www.anaconda.com/download/success")
 st.write("##### 2. Make sure you choose the following settings :")
-st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python programming\\AI Env\\static\\miniconda.png")
+st.image("Streamlit/static/miniconda.png")
 
 st.write("##### 3. You can fetch this from here :")
-st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python programming\\AI Env\\static\\accessing_conda.png")
+st.image("Streamlit/static/accessing_conda.png")
 
 st.divider()
 
@@ -58,7 +58,7 @@ st.code("conda activate tf",language="bash")
 st.write("#### Handling Jupyter Notebook : ")
 st.write("##### pip install python_library | To install python library in virtual environment")
 st.code("pip install jupyter",language="bash")
-st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python programming\\AI Env\\static\\conda_terminal.png")
+st.image("Streamlit/static/conda_terminal.png")
 st.divider()
 st.header("• Section 4.Streamlit library Installation : ",anchor="section-4")
 st.subheader("Installation & Initialization :")
