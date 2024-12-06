@@ -1,4 +1,5 @@
 import streamlit as st
+
 # pages
 home = st.Page("Home.py", title="Home")
 initialization = st.Page("0_0 Initialization.py", title="0 Initialization")
