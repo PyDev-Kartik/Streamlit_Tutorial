@@ -13,7 +13,7 @@ help = st.Page("Help.py", title="Help")
 
 # navigation
 pages = {
-    "": [initialization,textElement,visualElement,dataElement,chartElement,formElement,advanceFormElement,layout,help],
+    "": [home,initialization,textElement,visualElement,dataElement,chartElement,formElement,advanceFormElement,layout,help],
 }
 
 nav = st.navigation(pages)
