@@ -101,3 +101,6 @@ if sidebar_input:
     st.write(f"You entered : {sidebar_input} in sidebar")
 
 st.divider()
+st.subheader("Help :")
+st.page_link("Help.py",label = "Click Here")
+st.divider()
