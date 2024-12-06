@@ -74,5 +74,5 @@ st.code("""
 
 st.divider()
 st.subheader("Help :")
-st.page_link("pages/Help.py",label = "Click Here")
+st.page_link("Help.py",label = "Click Here")
 st.divider()
