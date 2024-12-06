@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 st.header("4. Chart Elements : Streamlit based/ Matplotlib based")
 
@@ -49,26 +49,26 @@ st.scatter_chart(scatter_data)
 
 st.divider()
 
-st.write("5. Line Chart (Matplotlib) :")
-st.code("""fig,ax = plt.subplots()
-ax.plot(chart_data['A'],label='A')
-ax.plot(chart_data['B'],label='B')
-ax.plot(chart_data['C'],label='C')
-ax.set_title("Pyplot Line Chart")
-ax.legend()
-st.pyplot(fig)""")
+#st.write("5. Line Chart (Matplotlib) :")
+#st.code("""fig,ax = plt.subplots()
+#ax.plot(chart_data['A'],label='A')
+#ax.plot(chart_data['B'],label='B')
+#ax.plot(chart_data['C'],label='C')
+#ax.set_title("Pyplot Line Chart")
+#ax.legend()
+#st.pyplot(fig)""")
 
-fig,ax = plt.subplots()
-ax.plot(chart_data['A'],label='A')
-ax.plot(chart_data['B'],label='B')
-ax.plot(chart_data['C'],label='C')
-ax.set_title("Pyplot Line Chart")
-ax.legend()
-st.pyplot(fig)
+#fig,ax = plt.subplots()
+#ax.plot(chart_data['A'],label='A')
+#ax.plot(chart_data['B'],label='B')
+#ax.plot(chart_data['C'],label='C')
+#ax.set_title("Pyplot Line Chart")
+#ax.legend()
+#st.pyplot(fig)
 
-st.divider()
+#st.divider()
 
-st.write("6. Map (based on co-ordinates) :")
+st.write("5. Map (based on co-ordinates) :")
 st.code("""map_data = pd.DataFrame(
     np.random.rand(100,2)/ [50,50] + [23.04,72.47],
     columns=['lat','lon'])
