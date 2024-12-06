@@ -4,5 +4,5 @@ import streamlit as st
 st.title("Intro to Streamlit - Tutorial")
 st.write("Streamlit is a service which can help us create easy and fast paced python website in less time.")
 
-st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python programming\\AI Env\\static\\logo.png",width=1200)
+st.image("static/logo.png",width=1200)
 st.markdown("<h3 style='text-align: right;'> - By KARTIK HAJELA </n3>", unsafe_allow_html=True)
