@@ -33,10 +33,10 @@ st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python program
         caption="Cat in office",width=200)
 """) 
 
-st.image("static/code.png",width=5000)
+st.image("Streamlit/static/code.png",width=5000)
 
 # Code to display image of a cat :
-st.image("static/cat.jpg",caption="Cat in office",width=200)
+st.image("Streamlit/static/cat.jpg",caption="Cat in office",width=200)
 
 
 st.divider()
