@@ -10,15 +10,15 @@ st.markdown("<h3 style='text-align: right;'> - By KARTIK HAJELA </n3>", unsafe_a
 
 # pages
 home = st.Page("Home.py", title="Home")
-initialization = st.Page("Streamlit/Pages/0_0 Initialization", title="0 Initialization")
-textElement = st.Page("Streamlit/Pages/1_1 Text Element", title="1 Text Element")
-visualElement = st.Page("Streamlit/Pages/2_2 Visual Element", title="2 Visual Element")
-dataElement = st.Page("Streamlit/Pages/3_3 Data Element", title="3 Data Element")
-chartElement = st.Page("Streamlit/Pages/4_4 Chart Element", title="4 Chart Element")
-formElement = st.Page("Streamlit/Pages/5_5 Form Element", title="5 Form Element")
-advanceFormElement = st.Page("Streamlit/Pages/6_6 Advance Form Element", title="6 Advance Form Element")
-layout = st.Page("Streamlit/Pages/7 Layout", title="7 Layout")
-help = st.Page("Streamlit/Pages/Help", title="Help")
+initialization = st.Page("0_0 Initialization.py", title="0 Initialization")
+textElement = st.Page("1_1 Text Element.py", title="1 Text Element")
+visualElement = st.Page("2_2 Visual Element.py", title="2 Visual Element")
+dataElement = st.Page("3_3 Data Element.py", title="3 Data Element")
+chartElement = st.Page("4_4 Chart Element.py", title="4 Chart Element")
+formElement = st.Page("5_5 Form Element.py", title="5 Form Element")
+advanceFormElement = st.Page("6_6 Advance Form Element.py", title="6 Advance Form Element")
+layout = st.Page("7 Layout.py", title="7 Layout")
+help = st.Page("Help.py", title="Help")
 
 
 # navigation
