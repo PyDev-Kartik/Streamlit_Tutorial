@@ -1,5 +1,8 @@
 import streamlit as st
 
+st.sidebar.title("Developer's Note :")
+st.sidebar.write("This Page is beginner friendly and it would keep on evolving, provide more depth tutorials on 'Streamlit'.")
+
 # Let's begin to learn Streamlit: 
 st.title("Intro to Streamlit - Tutorial")
 st.write("Streamlit is a service which can help us create easy and fast paced python website in less time.")
