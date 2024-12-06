@@ -17,7 +17,7 @@ dataElement = st.Page("3_3 Data Element.py", title="3 Data Element")
 chartElement = st.Page("4_4 Chart Element.py", title="4 Chart Element")
 formElement = st.Page("5_5 Form Element.py", title="5 Form Element")
 advanceFormElement = st.Page("6_6 Advance Form Element.py", title="6 Advance Form Element")
-layout = st.Page("7 Layout.py", title="7 Layout")
+layout = st.Page("7_7 Layout.py", title="7 Layout")
 help = st.Page("Help.py", title="Help")
 
 
