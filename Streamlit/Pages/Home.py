@@ -1,7 +1,8 @@
 import streamlit as st
 
-st.sidebar.title(":green[Developer's Note :]")
-st.sidebar.write("This Page is beginner friendly and it would keep on evolving, provide more depth tutorials on 'Streamlit'.")
+st.sidebar.title(":grey-background[Developer's Note :]")
+with st.container(border=True):
+  st.sidebar.write(":green[This Page is beginner friendly and it would keep on evolving, provide more depth tutorials on 'Streamlit'.]")
 
 # Let's begin to learn Streamlit: 
 st.title("Intro to Streamlit - Tutorial")
