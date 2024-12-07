@@ -24,7 +24,7 @@ st.write("For me it's in :")
 st.write(f""" :blue-background["{path}"]""")
 st.write("""•   But python does't supports this addressing. So we would have to solve it. By introducing double-backslash mechanism for error control""")
 st.write("We can modify our path as :")
-st.image("streamlit/static/img_path.png")
+st.image("Streamlit/static/img_path.png")
 
 st.code("""
 # Code to display image of a cat : 
@@ -34,13 +34,13 @@ st.image("C:\\Users\\Kartik\\Desktop\\KDocuments\\Programming\\3. Python program
         caption="Cat in office",width=200)
 """) 
 
-st.image("streamlit/static/code.png",width=5000)
+st.image("Streamlit/static/code.png",width=5000)
 
 st.write("### So this is one of the complex addressing methods,\n ### let's see a simpler one too : ")
 st.code("""st.image("streamlit/static/cat.jpg",caption="Cat in office",width=200)""") 
 # Code to display image of a cat :
 
-st.image("streamlit/static/cat.jpg",caption="Cat in office",width=200)
+st.image("Streamlit/static/cat.jpg",caption="Cat in office",width=200)
 
 
 st.divider()
@@ -54,7 +54,7 @@ st.code("""st.audio("streamlit/static/multimedia/phonk.mp3",
           end_time=25,
           autoplay=True)""")
 
-st.audio("streamlit/static/multimedia/phonk.mp3",
+st.audio("Streamlit/static/multimedia/phonk.mp3",
           format="audio/mpeg", 
           loop=True,
           start_time=4,
@@ -76,7 +76,7 @@ st.divider()
 
 st.write("4. Video : To display the video.")
 
-st.code("""st.video("streamlit/static/multimedia/phonk.mp4",
+st.code("""st.video("Streamlit/static/multimedia/phonk.mp4",
          format = "video/mp4",
          start_time = 4,
          subtitles = None,
@@ -86,7 +86,7 @@ st.code("""st.video("streamlit/static/multimedia/phonk.mp4",
          muted= False)
 """)
 
-st.video("static/multimedia/phonk.mp4", format = "video/mp4", start_time = 4, subtitles = None, end_time = 25 , loop = False, autoplay= False, muted= False)
+st.video("Streamlit/static/multimedia/phonk.mp4", format = "video/mp4", start_time = 4, subtitles = None, end_time = 25 , loop = False, autoplay= False, muted= False)
 
 st.divider()
 
