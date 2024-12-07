@@ -6,6 +6,7 @@ with st.container(border=True):
         st.write("##### :grey-background[ • Section 2.Anaconda Installation : [Link](#section-2)]", unsafe_allow_html=True)
         st.write("##### :grey-background[ • Section 3.Vritual Environment Creation : [Link](#section-3)]", unsafe_allow_html=True)
         st.write("##### :grey-background[ • Section 4.Streamlit library Installation : [Link](#section-4)]", unsafe_allow_html=True)
+        st.write("##### :grey-background[ • Section 5.First code : [Link](#section-5)]", unsafe_allow_html=True)
 st.divider()
 
 st.header("• Section 1.Python Installation : ",anchor="section-1")
@@ -65,9 +66,9 @@ st.subheader("Installation & Initialization :")
 
 st.code("""pip install streamlit""")
 st.write("NOTE: :blue-background[Intialize the same in the evironment variables.]")
-
-st.subheader("First code : ")
-st.caption("(The following code would help us to write text on the webpage.)")
+st.divider()
+st.header("• Section 5.First code : ",anchor="section-5")
+st.write("##### (The following code would help us to write text on the webpage.)")
 st.code("""
         import streamlit as st
         st.write('Hello World')""")
