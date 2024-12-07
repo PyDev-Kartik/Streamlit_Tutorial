@@ -85,7 +85,10 @@ st.code("""if st.button("Increment Counter updated"): # Incrementation of code
 # so we added incrementation function. Rest code is self explanatory. """)
 
 st.divider()
-
 st.subheader("Help :")
-st.page_link("Help.py",label = "Click Here")
+col1_foot,col2_foot = st.columns([3,1])
+with col1_foot:
+        st.page_link("Help.py",label = "Click Here")
+with col2_foot:
+        st.page_link("7_7 Layouts.py",label = ":green-background[Next page >]")
 st.divider()
