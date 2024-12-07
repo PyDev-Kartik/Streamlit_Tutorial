@@ -192,16 +192,10 @@ st.divider()
 
 st.write("##### 12. Logo : to change/add logo of sidebar and main page")
 st.code("""
-options = ["North", "East", "South", "West"]
-
-selection = st.pills("Directions", options, selection_mode="multi")
-st.markdown(f"Your selected options: {selection}.")
-
-selection2 = st.segmented_control("Directions", options, selection_mode="multi")
-st.markdown(f"Your selected options: {selection2}.")
-
-selection3 = st.multiselect("Directions",options,["North", "South"],)
-st.markdown(f"Your selected options: {selection3}.")
+sidebar_logo = "Streamlit/static/logo.png"
+main_body_logo = "Streamlit/static/logo.png"
+if st.checkbox("Show logo : "):
+    st.logo(sidebar_logo, icon_image=main_body_logo)
 """)
 
 sidebar_logo = "Streamlit/static/logo.png"
