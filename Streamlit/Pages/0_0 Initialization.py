@@ -74,6 +74,10 @@ st.code("""
         st.write('Hello World')""")
 
 st.divider()
-st.subheader("Help :")
-st.page_link("Help.py",label = "Click Here")
+col1_foot,col2_foot = st.columns([2,1])
+with col1_foot:
+        st.subheader("Help :")
+        st.page_link("Help.py",label = "Click Here")
+with col2_foot:
+        st.page_link("1_1 Text Elements.py",label = "Next page >")
 st.divider()
