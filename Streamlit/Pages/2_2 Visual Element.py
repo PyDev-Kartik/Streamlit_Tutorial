@@ -74,7 +74,7 @@ st.audio(voice2)
 
 st.divider()
 
-st.write("4. Video : To display the video.")
+st.write("5. Video : To display the video.")
 
 st.code("""st.video("Streamlit/static/multimedia/phonk.mp4",
          format = "video/mp4",
@@ -90,7 +90,7 @@ st.video("Streamlit/static/multimedia/phonk.mp4", format = "video/mp4", start_ti
 
 st.divider()
 
-st.write("5. Camera-Input : To access the camera and click photos, save and access them.")
+st.write("6. Camera-Input : To access the camera and click photos, save and access them.")
 
 st.code("""
 access = st.checkbox("Provide camera access : ")
@@ -108,7 +108,7 @@ if access:
 
 st.divider()
 
-st.write("6. Toast : To display quick message.")
+st.write("7. Toast : To display quick message.")
 st.code("""
 text = st.text_input("Write anything")
 if text : 
@@ -120,7 +120,7 @@ if text :
 
 st.divider()
 
-st.write("7. Balloon/Snow : To display ballons and snow as easter eggs.")
+st.write("8. Balloon/Snow : To display ballons and snow as easter eggs.")
 
 st.code("""
 ch1 = st.checkbox("Ballon")
@@ -139,7 +139,7 @@ if ch2:
 
 st.divider()
 
-st.write("8. Spinner : To spin a wheel just like a loader it will load till our process finishes.")
+st.write("9. Spinner : To spin a wheel just like a loader it will load till our process finishes.")
 st.caption("In the given example we have used time module to add extra time.")
 
 st.code("""
@@ -151,7 +151,7 @@ st.video("Streamlit/static/multimedia/spinner.mp4",autoplay=True,loop=True)
 
 st.divider()
 
-st.write("9. Status : To display the current status of the process")
+st.write("10. Status : To display the current status of the process")
 st.write("If the process is 'going-on' it would be displayed as : :blue-background[spinner]")
 st.write("If the process is 'completed' it would be displayed as : :green[✓]")
 st.write("If the process is 'completed' it would be displayed as : ⚠️")
@@ -168,7 +168,7 @@ st.status("error occured",expanded=True,state="error")
 
 st.divider()
 
-st.write("10. Chats : To display and send messages")
+st.write("11. Chats : To display and send messages")
 st.write("st.chat_input - to provide text-box to write message")
 st.write("""st.chat_message("user",avatar="user") - to display message and avatar is used to signify who is writing message""")
 st.caption("There are just two modes of avatar : user and assistant")
