@@ -17,6 +17,3 @@ with col2:
 st.write("### If still in doubt you can leave a message at : ")
 st.link_button("Instagram","https://www.instagram.com/kartik.hajela/")
 st.link_button("Whatsapp","https://wa.me/+917984299346")
-
-st.write("#### Developer's Note : ")
-st.link_button("Read this","https://docs.streamlit.io/deploy/streamlit-community-cloud/get-started")
