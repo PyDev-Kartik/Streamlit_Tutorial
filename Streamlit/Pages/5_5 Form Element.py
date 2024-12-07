@@ -167,23 +167,115 @@ with st.form(key="user selection info"):
     opt = st.selectbox("Choice 1 [simple choice]",options=["Male","Female"])
     opt2 = st.selectbox("Choice 2 [placeholder]",["Male", "Female"],index=None, placeholder="Select Gender",)
     opt3 = st.selectbox("Choice 4 Enter City [Now this would work as auto suggest]",cities_df["cities"],index=None, placeholder="Select Your City",)
-    opt4 = st.select_slider("Choice 4 Rating : [slider input]",["0 Worst","1","2","3","4","5","6","7","8","9","10 Best"])
     submit6 = st.form_submit_button()
 
 if submit6:
         st.write("#### INFO : ")
-        for key,value in {'Option 1':opt,'Option 2':opt2,'Option 3':opt3,'Option 4':opt4}.items():
+        for key,value in {'Option 1':opt,'Option 2':opt2,'Option 3':opt3}.items():
             st.write(f"{key}: {value}")
 
 st.divider()
 
-st.write("#####5. Displaying Messages :")
+st.write("##### 5. Radio Input, Slider Input, Toggle:")
+st.write("• Radio: ")
+st.code("""st.radio("Radio Input",options=["Male","Female"])""")
+st.radio("Radio Input",options=["Male","Female"])
+st.divider()
+st.write("• Slider: ")
+st.code("""st.select_slider("Choice 4 Rating : [slider input]",["0 Worst","1","2","3","4","5","6","7","8","9","10 Best"])""")
+st.select_slider("Slider : [slider input]",["0 Worst","1","2","3","4","5","6","7","8","9","10 Best"])
+st.divider()
+st.write("• Toggle: ")
+st.code("""
+on = st.toggle("Activate feature")
+if on:
+    st.write("Feature activated!")""")
+on = st.toggle("Activate feature")
+if on:
+    st.write("Feature activated!")
+
+st.divider()
+
+st.write("##### 6. Displaying Messages & Error exception:")
 st.write("• Displaying Success Message: ")
 st.code("""st.success("Sucessful Message")""")
 st.success("Sucessful Message")
+st.divider()
 st.write("• Displaying Warning Message: ")
 st.code("""st.warning("Warning Message")""")
 st.warning("Warning Message")
+st.divider()
+st.write("• Displaying Error Message: ")
+st.code("""st.error("Warning Message")""")
+st.error("Error Message")
+st.divider()
+st.write("• Displaying Information Message: (with custom icon) ")
+st.code("""st.info('This is an informational message', icon="ℹ️")""")
+st.info('This is an informational message', icon="ℹ️")
+st.divider()
+st.write("###### • Error Exception handling: ")
+st.code("""
+e = RuntimeError("This is an exception of type RuntimeError")
+        
+# We will manually assign an error to e.
+# And due to st.exception, although an error should occur 
+# but it's simply replaced by the error message.
+        
+st.exception(e)
+
+""")
+e = RuntimeError("This is an exception of type RuntimeError")
+st.exception(e)
+st.divider()
+
+
+
+st.write("##### 7. Feedback :To get interactive feedback ")
+st.write("• Star rating : ")
+st.code("""
+sentiment_mapping = ["one", "two", "three", "four", "five"]
+selected = st.feedback("stars")
+if selected is not None:
+    st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
+""")
+
+sentiment_mapping = ["one", "two", "three", "four", "five"]
+selected = st.feedback("stars")
+if selected is not None:
+    st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
+
+st.write("• Thumb's up/down : ")
+st.code("""
+sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+selected = st.feedback("thumbs")
+
+if selected is not None:
+    st.markdown(f"You selected: {sentiment_mapping[selected]}")
+""")
+
+sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+selected = st.feedback("thumbs")
+
+if selected is not None:
+    st.markdown(f"You selected: {sentiment_mapping[selected]}")
+
+st.divider()
+
+st.write("##### 8. Stop :To partially stop the rendering of the page. ")
+st.write("In the following example the content below this line of code won't render(execute) untill the 'name' is entered. ")
+st.code("""
+name = st.text_input("Name")
+if not name:
+  st.warning('Please input a name.')
+  st.stop()
+st.success("Thank you for inputting a name.")
+""")
+
+name = st.text_input("Name")
+if not name:
+  st.warning('Please input a name.')
+  st.stop()
+st.success("Thank you for inputting a name.")
 
 st.divider()
 
