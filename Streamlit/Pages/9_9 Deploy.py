@@ -45,4 +45,9 @@ st.divider()
 st.write("""#### You can share your "Python Based Web App" with other.""")
 st.write("• Click share and copy the link.")
 st.image("Streamlit/static/st_createapp_share.png")
+
 st.divider()
+st.subheader("Help :")
+st.page_link("Help.py",label = "Click Here")
+st.divider()
+
