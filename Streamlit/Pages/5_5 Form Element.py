@@ -182,7 +182,7 @@ st.write("• Displaying Success Message: ")
 st.code("""st.success("Sucessful Message")""")
 st.success("Sucessful Message")
 st.write("• Displaying Warning Message: ")
-st.code("""st.("Warning Message")""")
+st.code("""st.warning("Warning Message")""")
 st.warning("Warning Message")
 
 st.divider()
