@@ -52,14 +52,14 @@ st.code("""st.audio("streamlit/static/multimedia/phonk.mp3",
           loop=True,
           start_time=4,
           end_time=25,
-          autoplay=True)""")
+          autoplay=False)""")
 
 st.audio("Streamlit/static/multimedia/phonk.mp3",
           format="audio/mpeg", 
           loop=True,
           start_time=4,
           end_time=25,
-          autoplay=True)
+          autoplay=False)
 
 st.divider()
 
