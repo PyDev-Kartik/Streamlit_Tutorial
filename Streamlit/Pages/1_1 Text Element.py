@@ -127,5 +127,9 @@ st.write("###### Hi ")
 
 st.divider()
 st.subheader("Help :")
-st.page_link("Help.py",label = "Click Here")
+col1_foot,col2_foot = st.columns([2,1])
+with col1_foot:
+        st.page_link("Help.py",label = "Click Here")
+with col2_foot:
+        st.page_link("2_2 Visual Element.py",label = ":green-background[Next page >]")
 st.divider()
