@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd 
 
 st.header("7.Layouts : ")
 
@@ -99,6 +100,133 @@ sidebar_input = st.sidebar.text_input("Enter something in sidebar")
 
 if sidebar_input:
     st.write(f"You entered : {sidebar_input} in sidebar")
+
+st.divider()
+
+st.write("#### 6. Color-Picker : To fetch hex code of color as variable. ")
+st.code("""st.color_picker("Choose Color")""")
+color = st.color_picker("Choose Color")
+st.write(f"##### The color code is {color}")
+
+st.divider()
+
+st.write("#### 7. File Uploader : To upload file. ")
+st.caption("let's take an example to input csv file.")
+st.code("""
+# Application based example : 
+file = st.file_uploader("Enter .csv file")
+if file:
+    df = pd.read_csv(file)
+    st.dataframe(df)
+""")
+file = st.file_uploader("Enter .csv file")
+if file:
+    df = pd.read_csv(file)
+    st.dataframe(df)
+
+st.divider()
+
+st.write("#### 8. File Downloader : To download the processed file. ")
+st.caption("let's take an example where we would the uploaded file.")
+st.code("""
+st.download_button("Download csv file",
+                    file,
+                    file_name="download.csv",
+                    mime="text/csv")
+""")
+if file:
+    st.download_button("Download csv file",file,file_name="download.csv",mime="text/csv")
+else:
+    st.warning("Please upload the file.")
+st.divider()
+
+st.write("#### 9. Expander : A row that expands to display more data. ")
+st.code("""
+with st.expander("Expand Me"):
+    st.write("Line 1")
+    st.write("Line 2")
+    st.image("Streamlit/static/cat.jpg",width=100)
+    st.success("Hii")
+""")
+with st.expander("Expand Me"):
+    st.write("Line 1")
+    st.write("Line 2")
+    st.image("Streamlit/static/cat.jpg",width=100)
+    st.success("Hii")
+
+st.divider()
+
+st.write("##### 10. popover : It's concept is similar to expander but it opens as a pop up. ")
+st.code("""
+with st.popover("Open popover"):
+    st.markdown("Hello World 👋")
+    name = st.text_input("What's your name?")
+""")
+with st.popover("Open popover"):
+    st.markdown("Hello World 👋")
+    name = st.text_input("What's your name?")
+
+st.divider()
+
+st.write("##### 11. pills, Segmented_control, multiselect : to select Multiple options")
+st.code("""
+options = ["North", "East", "South", "West"]
+
+selection = st.pills("Directions", options, selection_mode="multi")
+st.markdown(f"Your selected options: {selection}.")
+
+selection2 = st.segmented_control("Directions", options, selection_mode="multi")
+st.markdown(f"Your selected options: {selection2}.")
+
+selection3 = st.multiselect("Directions",options,["North", "South"],)
+st.markdown(f"Your selected options: {selection3}.")
+""")
+options = ["North", "East", "South", "West"]
+selection = st.pills("Directions", options, selection_mode="multi")
+st.markdown(f"Your selected options: {selection}.")
+selection2 = st.segmented_control("Directions", options, selection_mode="multi")
+st.markdown(f"Your selected options: {selection2}.")
+selection3 = st.multiselect("Directions",options,["North", "South"],)
+st.markdown(f"Your selected options: {selection3}.")
+st.divider()
+
+st.write("##### 12. Logo : to change/add logo of sidebar and main page")
+st.code("""
+options = ["North", "East", "South", "West"]
+
+selection = st.pills("Directions", options, selection_mode="multi")
+st.markdown(f"Your selected options: {selection}.")
+
+selection2 = st.segmented_control("Directions", options, selection_mode="multi")
+st.markdown(f"Your selected options: {selection2}.")
+
+selection3 = st.multiselect("Directions",options,["North", "South"],)
+st.markdown(f"Your selected options: {selection3}.")
+""")
+
+sidebar_logo = "Streamlit/static/logo.png"
+main_body_logo = "Streamlit/static/logo.png"
+if st.checkbox("Show logo : "):
+    st.logo(sidebar_logo, icon_image=main_body_logo)
+
+st.write("You can check the results : At the top of sidebar and on the main page (if you minimize the sidebar)")
+
+st.divider()
+
+st.write("##### 13. HTML : to add HTML & CSS based styling and structuring")
+st.code("""st.html("<p><span style='text-decoration: line-through double red;'>Oops</span>!</p>")""")
+
+st.html("<p><span style='text-decoration: line-through double red;'>Oops</span>!</p>")
+
+st.divider()
+
+st.write("##### 14. Switch page : to go to next/ any other webpage")
+st.code("""
+if st.button("Help"):
+    st.switch_page("Pages/Help.py")""")
+
+if st.button("Help"):
+    st.switch_page("Pages/Help.py")
 
 st.divider()
 st.subheader("Help :")
