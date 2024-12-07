@@ -177,6 +177,16 @@ if submit6:
 
 st.divider()
 
+st.write("#####5. Displaying Messages :")
+st.write("• Displaying Success Message: ")
+st.code("""st.success("Sucessful Message")""")
+st.success("Sucessful Message")
+st.write("• Displaying Warning Message: ")
+st.code("""st.("Warning Message")""")
+st.warning("Warning Message")
+
+st.divider()
+
 st.subheader("Sample form Template : (with all functionalities : )")
 st.code("""
 CODE : 
