@@ -37,9 +37,10 @@ st.table(df)
 st.divider()
 
 st.write("4. Metrices : Displaying the metrice or data in new form.")
-st.code(""" st.metric(label="Count",value="45")""")
+st.code("""st.metric(label="Ahmedabad",value="45°C",delta="3°C")
+st.metric(label="Shimla",value="8°C",delta="-5°C")""")
 st.write("Today's Weather Forecast : ")
-col1_temp, col2_temp = st.column(2)
+col1_temp, col2_temp = st.columns(2)
 with col1_temp:
             st.metric(label="Ahmedabad",value="45°C",delta="3°C")
 with col2_temp:
