@@ -13,7 +13,10 @@ with st.form(key="user info"):  # it would provide the space to bind all functio
 
 with st.form(key="user info"):
     name = st.text_input("Enter your name : ")
-    st.form_submit_button()
+    submit = st.form_submit_button()
+
+if submit:
+    st.success(f"You have entered {name}.")
 
 st.divider()
 
@@ -31,7 +34,12 @@ with st.form(key="user text info"):
     password = st.text_input("Enter password : [text input as password]",type="password")
     address = st.text_area("Enter your address : [text input as address]")
     surname = st.text_input("Enter your surname : [with placeholder and help]",help="surname is your last name",placeholder="surname")
-    st.form_submit_button()
+    submit2 = st.form_submit_button()
+
+if submit2:
+        st.write("#### INFO : ")
+        for key,value in {'Name':name,'Boolean':boolean,'Password':password,'Address':address,'Surname':surname}.items():
+            st.write(f"{key}: {value}")
 
 st.divider()
 
@@ -47,7 +55,13 @@ with st.form(key="user number info"):
     no = st.number_input("Enter any no : [Simple no]")
     no2 = st.number_input("Enter no2 : (in range 2-10) [Simple no with range] ",min_value=2,max_value=10)
     no3 = st.number_input("Enter no3 : [with step value of 3].Refer help section for more info :)",help="This '+' key would increment step value (3) to the current no.",step=3)
-    st.form_submit_button()
+    submit3 = st.form_submit_button()
+
+if submit3:
+        st.write("#### INFO : ")
+        for key,value in {'No':no,'No2':no2,'No3':no3}.items():
+            st.write(f"{key}: {value}")
+
 
 st.divider()
 
@@ -72,7 +86,12 @@ with st.form(key="user date info"):
 with st.form(key="user date info"):
     date = st.date_input("Enter any date : ")        
     date2 = st.date_input("Enter any date2 : ",format="DD-MM-YYYY",min_value=min_date,max_value=max_date)
-    st.form_submit_button()
+    submit4 = st.form_submit_button()
+
+if submit4:
+        st.write("#### INFO : ")
+        for key,value in {'Date':date,'Date2':date2}.items():
+            st.write(f"{key}: {value}")
 
 st.code("""
 # Time input : 
@@ -82,8 +101,11 @@ with st.form(key="user time info"):
         """)
 
 with st.form(key="user time info"):
-    date = st.time_input("Enter time : ")        
-    st.form_submit_button()
+    time = st.time_input("Enter time : ")        
+    submit5 = st.form_submit_button()
+
+if submit5:
+     st.success(f"You have entered {time}.")
 
 st.divider()
 
@@ -146,8 +168,12 @@ with st.form(key="user selection info"):
     opt2 = st.selectbox("Choice 2 [placeholder]",["Male", "Female"],index=None, placeholder="Select Gender",)
     opt3 = st.selectbox("Choice 4 Enter City [Now this would work as auto suggest]",cities_df["cities"],index=None, placeholder="Select Your City",)
     opt4 = st.select_slider("Choice 4 Rating : [slider input]",["0 Worst","1","2","3","4","5","6","7","8","9","10 Best"])
-    st.form_submit_button()
+    submit6 = st.form_submit_button()
 
+if submit6:
+        st.write("#### INFO : ")
+        for key,value in {'Option 1':opt,'Option 2':opt2,'Option 3':opt3,'Option 4':opt4}.items():
+            st.write(f"{key}: {value}")
 
 st.divider()
 
@@ -256,8 +282,6 @@ st.code("""
             st.write("#### INFO : ")
             for key,value in form_values.items():     # we would travese our dictionary and print the data it fetched from the form. 
                 st.write(f"{key}: {value}")
+        
 """)
-st.divider()
-st.subheader("Help :")
-st.page_link("Help.py",label = "Click Here")
 st.divider()
