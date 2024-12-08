@@ -1,6 +1,20 @@
 import streamlit as st
 
-st.write("Introduction page")
+st.header("0. Introduction : ")
+st.write("#### 1. Why Streamlit ? ")
+st.write("Streamlit is fast, less complex platform that helps us to integrate UI with our python programming. We can deploy our code as website and share it with others easily.")
+st.divider()
+st.write("#### 2. Structure of Code : ")
+st.code("""
+# SYNTAX :
+import streamlit as st
+
+#syntax --> st.elementname()
+st.write("Hello Streamlit") """)
+
+st.write("Implementation : ")
+with st.container(border=True):
+    st.write("Hello Streamlit")
 
 st.divider()
 st.subheader("Help :")
