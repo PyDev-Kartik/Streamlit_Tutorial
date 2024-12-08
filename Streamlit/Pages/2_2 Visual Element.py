@@ -147,7 +147,7 @@ with st.spinner('Wait for it...'):
     time.sleep(5)
 st.success("Done!")""")
 
-st.video("Streamlit/static/multimedia/spinner.mp4",autoplay=True,loop=True)
+st.video("Streamlit/static/multimedia/spinner.mp4",autoplay=True,loop=True,mute=True)
 
 st.divider()
 
