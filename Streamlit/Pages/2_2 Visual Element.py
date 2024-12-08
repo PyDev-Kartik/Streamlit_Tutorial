@@ -67,10 +67,10 @@ st.write("4. Audio-Input : To record audio.")
 
 st.code("""voice2 = st.audio_input("Record a Voice note")""")
 
-voice2 = st.audio_input("Record a Voice note")
+voice3 = st.audio_input("Record a Voice note")
 st.write("Playing the recorded audio : ")
 st.code("st.audio(voice2)")
-st.audio(voice2,autoplay=False)
+st.audio(voice3,format="audio/mpeg",loop=True,autoplay=False)
 
 st.divider()
 
