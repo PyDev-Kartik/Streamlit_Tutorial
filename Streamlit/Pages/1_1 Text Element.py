@@ -2,19 +2,24 @@ import streamlit as st
 
 
 st.header("1. Text elements : ")
-st.write("1. st.title : Used to define the title of the web-page. For this page it is 'Intro to Streamlit'.")
+st.write("1. st.title : Used to define the title of the web-page.")
 st.code("""st.title("title")""")
-st.write("2. st.header : Used to define a header.Just upscaled text. for this page it is 'Getting started with streamlit'.")
+st.title("title")
+st.write("2. st.header : Used to define a header.Just upscaled text.")
 st.code("""st.header("header")""")
-st.write("3. st.subheader : smaller font then header. in this page it is 'First code : '.")
+st.header("header")
+st.write("3. st.subheader : smaller font then header.")
 st.code("""st.subheader("subheader")""")
+st.subheader("subheader")
 st.write("4. st.write : used to print data on the web pages.")
 st.code("""st.write("Hello world")""")
+st.write("Hello world")
 st.write("5. st.markdown : used to print data with some css stuff i.e text formatting on the web pages.")
 st.code("""st.markdown("Hello world, Welcome to :blue-background[INDIA].")""")
 st.markdown("Hello world, welcome to :blue-background[INDIA].")
 st.write("6. st.code : used to display code.")
 st.code("""st.code("print("Hello world")",language="python" # or java,c,c++)""")
+st.code("print("Hello world")",language="python")
 st.code("""#Another example of st.code : (for better understanding) 
             a = 10
             b = 20
