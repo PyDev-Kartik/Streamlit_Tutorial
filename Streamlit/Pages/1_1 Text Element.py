@@ -19,7 +19,7 @@ st.code("""st.markdown("Hello world, Welcome to :blue-background[INDIA].")""")
 st.markdown("Hello world, welcome to :blue-background[INDIA].")
 st.write("6. st.code : used to display code.")
 st.code("""st.code("print("Hello world")",language="python" # or java,c,c++)""")
-st.code("print("Hello world")",language="python")
+st.code("""print("Hello world")",language="python" """)
 st.code("""#Another example of st.code : (for better understanding) 
             a = 10
             b = 20
