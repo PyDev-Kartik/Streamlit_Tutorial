@@ -55,6 +55,10 @@ st.code("conda create -n tf python=3.7")
 st.write("##### Syntax : conda activate var_name | To activate virtual environment")
 st.code("conda activate tf",language="bash")
 
+st.write("##### >>> If error occurs, then :")
+st.markdown("- STEP 1: Open command prompt\n - STEP 2 (run this command): cd {path}\n - STEP 3 (run this command): conda activate {env_name}\n - STEP 4 (run this command): code")
+st.markdown("#This will redirect you to the VS Code platform.")
+
 st.write("#### Handling Jupyter Notebook : ")
 st.write("##### pip install python_library | To install python library in virtual environment")
 st.code("pip install jupyter",language="bash")
