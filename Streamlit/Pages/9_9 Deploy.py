@@ -52,14 +52,42 @@ st.image("Streamlit/static/st_createapp_share.png")
 st.divider()
 
 st.write("## How to edit the deployed Code : ")
-st.write("##### Login to Streamlit and find this option. Click on 'Edit with codespaces'.")
 st.image("Streamlit/static/edit_deployed.png")
-st.write("##### It would open the editor, edit the data as you like.")
-st.write("##### In the end, run these lines of code based on the coditions")
-st.write("##### If there is 'image,media, or file is being adde'")
+with st.container(border=True):
+        st.markdown(" - ##### Login to Streamlit and find this option. Click on :grey-background['Edit with codespaces'].\n - ##### It would open the editor, edit the data as you like.\n - ##### In the end, run these lines of code based on the conditions :")
+        with st.container(border=True):
+                st.write("1. If there is :green-background['image, media, or file is being uploaded'] then : (Untracked-Type)")
+                st.code("""
+                        # Check for Untracked Files :
+                        git status
+                        
+                        # Add Untracked Files :
+                        git add <filename>   # path of file
 
+                        # Commit Changes :
+                        git add .
+                        git commit -m 'Your commit message'
+                        
+                        # Push Changes :
+                        git push origin main
+
+                        """,language="bash")
+                
+        with st.container(border=True):
+                st.write("2. If  :green-background['just code is edited'] is then : (Modified-Type)")
+                st.code("""
+                        # Commit Changes :
+                        git add .
+                        git commit -m 'Your commit message'
+                        
+                        # Push Changes :
+                        git push origin main
+
+                        """,language="bash")
+        
 
 st.divider()
+
 st.subheader("Help :")
 st.page_link("Help.py",label = "Click Here")
 st.divider()
