@@ -50,6 +50,16 @@ st.write("• Click share and copy the link.")
 st.image("Streamlit/static/st_createapp_share.png")
 
 st.divider()
+
+st.write("## How to edit the deployed Code : ")
+st.write("##### Login to Streamlit and find this option. Click on 'Edit with codespaces'.")
+st.image("Streamlit/static/edit_deployed.png")
+st.write("##### It would open the editor, edit the data as you like.")
+st.write("##### In the end, run these lines of code based on the coditions")
+st.write("##### If there is 'image,media, or file is being adde'")
+
+
+st.divider()
 st.subheader("Help :")
 st.page_link("Help.py",label = "Click Here")
 st.divider()
